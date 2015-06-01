@@ -1,0 +1,17 @@
+<div ng-controller="MessagesController">
+	<div>
+		<div ng-repeat="message in messages">
+			<a href="#message/{{message.$id}}">
+				<div style="opacity: {{ getOpacity(message) }};" class="message message-small">
+	 				{{getContentPreview(message)}}
+				</div>
+			</a>
+		</div>
+		<a href="#compose">
+			<div class="message message-small compose-link" style="text-align: center; vertical-align: middle;">
+				Write a message of your own
+				<div>+</div>
+			</div>
+		</a>
+	</div>
+</div>

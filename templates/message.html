@@ -1,0 +1,16 @@
+<div ng-controller="MessageController">
+	<div class="message message-big">
+		<div style="background-color: #CCC; width: 100%;">
+			<div style="width: {{getPercentComplete()}}%; background-color: #EE0000; height: 5px;"></div>
+		</div>
+		<div style="white-space:pre-wrap;">{{message.content}}</div>
+		<div ng-switch on="showDestoryMessageOption">
+			<div ng-switch-when="true" class="destroy-link" ng-click="destroyMessage()">
+				Delete this message
+			</div>
+		</div>
+	</div>
+	<div style="margin: 0px auto; margin-top: 30px; text-align: center;">
+		<a href="#compose" class="compose-link">Inspired? Write a message.</a>
+	</div>
+</div>

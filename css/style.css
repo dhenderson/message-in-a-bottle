@@ -1,0 +1,90 @@
+body{
+	background-color: #DDD;
+	font-family: 'Libre Baskerville', serif;
+	margin: 0px;
+}
+a {color: #000; text-decoration: none;}
+a:hover {color: #000;}
+
+.container {width: 90%; margin: 0px auto; margin-bottom: 40px;}
+
+.nav{
+	border-bottom: 1px solid #777; background-color: #FFF; padding: 10px; 
+	text-align: center;
+	margin-bottom: 30px;
+}
+.nav h1 a{text-decoration: none;}
+
+.message {
+	border: 1px solid #AAA; border-top: 0px; border-bottom: 2px solid #777; background-color: #FFF;
+}
+
+.message-small {
+	float: left; width: 200px; height: 100px;
+	margin-right: 20px; margin-top: 20px;
+	padding: 10px;
+	font-size: 1.1em;
+	line-height: 1.8em;
+}
+
+/** iphone sized screens **/
+@media (max-width: 800px) {
+	.message-small{
+		float: none;
+		margin: 0px auto;
+		margin-bottom: 20px;
+		width: 90%;
+		height: auto;
+	}
+}
+
+.message-big{
+	padding: 15px;
+	width: 500px; 
+	max-width: 80%;
+	margin: 0px auto;
+	font-size: 1.5em;
+	line-height: 2em;
+}
+
+.compose-link {
+	background-color: #00AA00; padding: 5px; color: #FFF; 
+	border-right: 1px solid #009900;
+	border-bottom: 2px solid #005500;
+	text-decoration: none;
+}
+.compose-link:hover{color: #FFF; text-decoration: none; background-color: #009900; cursor: pointer;}
+
+.compose-box{
+	padding: 10px;
+	font-size: 1em;
+	font-family: 'Libre Baskerville', serif;
+	width: 100%;
+	height: 300px;
+	margin-bottom: 15px;
+}
+
+.destroy-link{
+	background-color: #CC0000; padding: 5px; color: #FFF; 
+	border-right: 1px solid #990000;
+	border-bottom: 2px solid #550000;
+	text-decoration: none;
+	font-size: 0.4em;
+	line-height: 1em;
+	margin: 0px auto;
+	cursor: pointer;
+	max-width: 150px;
+	text-align: center;
+}
+
+.footer{
+	color: #999;
+	width: 400px;
+	max-width: 70%;
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 30px;
+	border-top: 1px solid #777;
+}
+.footer h1{font-size: 1.2em; color: #777;}
+.footer a{color: #999; text-decoration: underline;}
